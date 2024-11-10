@@ -1,2 +1,11 @@
-Python >= 3.110
-git version >= 3.27
+# Python version >= 3.10
+python>=3.10
+
+# PyDriller for mining Git repositories
+pydriller>=2.4.0
+
+# GitPython for interacting with Git repositories programmatically
+gitpython>=3.27.0
+
+# python-dotenv for managing environment variables
+python-dotenv>=0.19.0
