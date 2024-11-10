@@ -1,0 +1,2 @@
+Python >= 3.110
+git version >= 3.27
