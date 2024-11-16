@@ -57,6 +57,7 @@ https://github.com/azb/UnityVRTutorialMaker.git
 https://github.com/MaddieFish/Echoes-of-the-Tides.git
 https://github.com/danielgeerts7/Huis-van-morgen.git
 https://github.com/Geetchopra/TheGameOfPoles.git
+https://github.com/MiauwMaster/UnityHoloLensProject59.git
 https://github.com/ur-whitelab/simview.git
 https://github.com/S00177754/Project300.git
 https://github.com/Jamy4000/VRDF.git
@@ -76,10 +77,13 @@ https://github.com/arm0ky0/SteamVR_Toolkit_Unity.git
 https://github.com/giveaphuk/SteamVR_Unity_Toolkit.git
 https://github.com/Unity-Technologies/InputSystem.git
 https://github.com/XxGodmoonxX/AR-AwaParty.git
+https://github.com/puppeteer-tsy/unity-arkit-plugin.git
 https://github.com/microsoft/MixedReality-WebRTC.git
 https://github.com/vrm-c/UniVRM.git
 https://github.com/Wellwick/IVVR.git
+https://github.com/Jamy4000/VRSF_Hybrid_ECS.git
 https://github.com/sh-akira/VirtualMotionCapture.git
+https://github.com/gladmmo/GladMMO.Library.git
 https://github.com/SGNLA/unity-arkit-plugin.git
 https://github.com/RussellXie7/Unity_Hololens_Dev.git
 https://github.com/holojam/HolojamSDK-Unity.git

@@ -9,10 +9,16 @@ def clone_repo(result,project_dir):
     for res_link in result:
         owner_name, project_name = utility.extract_details(res_link)
         repo_directory = os.path.join(project_dir, f"{owner_name}/{project_name}")
+        if os.path.exists(repo_directory):
+            print(f"Skipping {repo_directory}, already exists.")
+            continue
         os.makedirs(repo_directory, exist_ok=True)
         # Cloning the repository
         clone_command = f"git clone {res_link} {repo_directory}"
-        subprocess.run(clone_command, shell=True)
+        if not os.path.exists(repo_directory):
+            subprocess.run(clone_command, shell=True)
+        else:
+            print(f"Skipping {repo_directory}, already exists.")
 
 
 if __name__ == "__main__":

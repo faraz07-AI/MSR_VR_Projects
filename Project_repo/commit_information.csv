@@ -3,6 +3,31 @@ virtual-museum-app,"Merge pull request #38 in DPVM/app from feature/BuildMuseum 
 
 * commit 'b3823da35794be9eb19b3ad2a23ce86ea3b246f8':
   Made drawing tiles fast again",7d42a82ace56af146ff3822571321382688ff52b
+virtual-museum-app,"Slower walking in Durovis VR, joysticks independent from DPI",9b081814f37cd9669af544dd19a691625cf78170
+virtual-museum-app,"Merge pull request #81 in DPVM/app from feature/walking to master
+
+* commit '9b081814f37cd9669af544dd19a691625cf78170':
+  Slower walking in Durovis VR, joysticks independent from DPI",679dea76942e85f1bed6e3e397e87b4b360e1864
+virtual-museum-app,"Merge pull request #87 in DPVM/app from master to feature/BuildMuseum
+
+* commit '330f6828874c370739c7651350f7c2c17b95a5e0':
+  Fix loading of frame style
+  Test fixes, draw in frames automatically, frame style choice and a (for now) failed attempt at serializing that choice
+  Fix walking tests after Oculus implementation, add new style prefabs to catalog
+  Art frames, new styles and a lamp
+  Fixed android building after oculus integration
+  Finalized Oculus integration
+  Added preliminary Oculus support
+  Slower walking in Durovis VR, joysticks independent from DPI
+  Fix already registered virtual axes bug
+  This should fix the Switch VR button!
+  Just to be sure, I'll commit this as well
+  New settings
+  Unity changed these files automatically...
+  Fix walking tests after changes
+  Switch VR mode + hopefully fix joystick sensitivity...
+  Fix tabs to spaces, for sonar",63bf144bc73b2f9a65228c37fcefb16e412b2b22
+EscapeMuseumVR,refactor: Optimized the use of port animation,d43672e70735613321d08a5904513a995bd1a633
 Medieval_Warfare_VR-Unity,FPS Increased on mobile device efficiently :+1: :clap:,207bc512cef00cdc89341e207fa037a27d9a017f
 VRAlchemyLab,"Liquid Pour VFX : Adding sound and impact system
 
@@ -436,6 +461,20 @@ Gains are minor but they add up when you've got a lot of ray steps.
 * Set transform mode to matrix in controller prefabs, updated range / max recommended for line steps
 
 * Reverting cached collider bounds change",aea84fb1a09f2a82f384fedfaf0e2e0aa6de4998
+MixedRealityToolkit-Unity,"Small Performance Tweaks Round 2 (#3503)
+
+* ToolTips only refresh content when changed
+
+* Update VectorRollingStatistics.cs
+
+* Improved ButtonBorder, removed allocations from Interactable Easing
+
+* Update Easing.cs
+
+* Updated Interactable themes to cache components, added Reset to InteractableThemePropertyValue",5c26eb5404bd6741e4595cc12e35470724459411
+MixedRealityToolkit-Unity,"Optimized shader keyword access with id instead of string lookup.
+Removed unneeded warning when loading texture at runtime.
+Misc formatting",1560f94620cd4867778f76e2cd0ab13252345af2
 MixedRealityToolkit-Unity,"Update the Coding Style to prefer DateTime.UtcNow over DateTime.UtcNow
 
 See cool stuff that Jerome found:
@@ -453,6 +492,13 @@ MixedRealityToolkit-Unity,"Add some basic performance docs
 
 Primarily this serves as an aggregator of existing documentation and
 general strategies for how to deal with performance issues.",e89eb28c3cb2588a38ad97652d4dbe4be1ac0876
+MixedRealityToolkit-Unity,"Update Documentation/Performance/PerfGettingStarted.md
+
+Co-Authored-By: wiwei <wiwei@microsoft.com>",9915a5bdb9225f028e7dc446ac90ce341e2fb142
+MixedRealityToolkit-Unity,"Update Documentation/Performance/PerfGettingStarted.md
+
+Co-Authored-By: wiwei <wiwei@microsoft.com>",8e6ad5e160588c5f0615e44d51ca4ff9073003e5
+MixedRealityToolkit-Unity,Update Documentation/Performance/PerfGettingStarted.md,d2cba2234bc32250e2b9ea1c99dc4b365c9574d0
 MixedRealityToolkit-Unity,Merge branch 'mrtk_development' into performancedocs,e19a09521ecfafe0348907c4bfd9d6a59cb3fd69
 MixedRealityToolkit-Unity,"Merge pull request #3812 from wiwei/performancedocs
 
@@ -563,6 +609,9 @@ It turns out that if there's a build error, running play mode tests will hang in
 
 Building standalone is the fastest of all of the flavors (because it doesn't have to build an AppX), so we're moving this to the top.",1e09d8d2ab42813de2dc28f243fdd4f40c7468ae
 MixedRealityToolkit-Unity,Updates to the performance doc,26b8916a91c3895d05dfba264634d85eb2b3c7b9
+MixedRealityToolkit-Unity,"Merge pull request #5156 from Railboy/mrtk_gc_alloc_fixes_pt2
+
+Performance optimization with emphasis on HandInteractionExamples",e826f4e3be166dd96fa499263266d49167406ef1
 MixedRealityToolkit-Unity,Updates to optimize tool,648ff328accdc17949df67fec9e8997550c03154
 MixedRealityToolkit-Unity,"Add a link.xml to Assets to prevent critical MRTK components from getting optimized away in IL2CPP builds
 
@@ -579,6 +628,9 @@ MixedRealityToolkit-Unity,Init work to notifiy user of performance optimization,
 MixedRealityToolkit-Unity,"Merge pull request #5199 from Troy-Ferrell/users/trferrel/doc-updates
 
 Updated MRTK Optimize tool and performance/stability/optimization docs",8147130adeb67df036c1f99ab7896d3c9fd93fdc
+MixedRealityToolkit-Unity,"Merge pull request #5199 from Troy-Ferrell/users/trferrel/doc-updates
+
+Updated MRTK Optimize tool and performance/stability/optimization docs",8147130adeb67df036c1f99ab7896d3c9fd93fdc
 MixedRealityToolkit-Unity,"Update optimize check to EditorSettings class, add preference capability to turn off warnings",be8e23e753c6783d70c7ac6853f82dc1d5661e69
 MixedRealityToolkit-Unity,"Update MRTK Standard shader doc for performance section
 
@@ -586,6 +638,7 @@ Copied over performance content related to MRTK Standard shader from the perform
 MixedRealityToolkit-Unity,"Merge pull request #5389 from microsoft/MRTK-standard-shader-doc-update
 
 Update MRTK Standard shader doc for performance section",8b6c2a030b249fd801c303f3a663b8a8e38c5b94
+MixedRealityToolkit-Unity,Optimized the values.,c99b7e07c6ca45c8e43ef3cc8ded57f99beb20a5
 MixedRealityToolkit-Unity,"Minor update
 
 ""Hence, you can process multiple inputs at once. For example, combine fast eye targeting with hand gestures."" 
@@ -623,6 +676,7 @@ Fixes: #5748, #4203, #5621
 - Verified that my new tests would have failed in old code
 - Verified that my change actually fixes the bug (ray no longer hides when near SR)
 - Runs on HoloLens 2 with no adverse perf impact.",b709083420f75723b9d0286583078b39ac506637
+MixedRealityToolkit-Unity,Faster types,29b83777544d19f67e29a95d1188a2b8db977778
 MixedRealityToolkit-Unity,"Add build option for Unsafe Code (#5879)
 
 This is a follow up that is useful for issue #5879. Research mode is usually used in combination with computer vision, for which performance is crucial. Therefor unsafe code for direct memory access is needed. With this changes unsafe code can simply be enabled with a checkbox in the unity build window. Like with research mode this checkbox is only visible if the build target is UWP and the targeted device is Hololens.",47b5e3d63f995c5e909652f0811598cd11c4f5db
@@ -780,7 +834,11 @@ This change avoids that by updating the GetAllServices call to return a cached l
 I had also considered keeping the original ""sort order"" (i.e. random, or actually, insertion order into the registry) but we never formally defined what the ordering of elements was here, and the prime and most important scenario here depends on it being priority order sorted, so we may as well optimize for that use case.
 
 I didn't fully get rid of LINQ (note that the Reverse operation still uses LINQ) - this is okay because it's only in the shutdown path. Alternatively I could have changed the function signature of GetAllServices to be IReadOnlyList, but this would have been a breaking change for not a lot of value.",c5e6cca105fb695ee9870e41311d491b5ebceb8c
+MixedRealityToolkit-Unity,Performance improvements for MRTK profile inspectors,538ea7b29df9d86dfb3e6cec070b602b5c546bde
 MixedRealityToolkit-Unity,Update perf docs and optimize window,18cc4e7a8f9e480c4fd9b2db854c420e25f21835
+MixedRealityToolkit-Unity,"Merge pull request #6122 from Railboy/mrtk_profile_inspector_perf
+
+MRTK Profile Inspector Performance Improvements",363cd9266afc1351ea09a38e8a0c8acd2d57edb9
 MixedRealityToolkit-Unity,"added method for registering a scale handler during runtime and removed component lookup in update (was slowing down performance of bb interaction)
 created default material for bb handles and added to resource folder of boundscontrol",e8e42f957a051fc98c1ebf676b350d22d2403464
 MixedRealityToolkit-Unity,"added method for registering a scale handler during runtime and removed component lookup in update (was slowing down performance of bb interaction)
@@ -791,18 +849,44 @@ MixedRealityToolkit-Unity,Create optimize materials for hand joint mesh visualiz
 MixedRealityToolkit-Unity,"Merge pull request #6784 from Troy-Ferrell/users/trferrel/optimize-handmeshjoints
 
 Create optimize materials for hand joint mesh visualization",5330d91c139eeed142f6bdb43988225bdde5ea80
+MixedRealityToolkit-Unity,"Update Documentation/Tools/OptimizeWindow.md
+
+Co-Authored-By: Bernadette Thalhammer <36998103+thalbern@users.noreply.github.com>",2e3aa3d40d1db247bcaf7e4ff8580bfcd99a7a0a
+MixedRealityToolkit-Unity,"Update Documentation/Tools/OptimizeWindow.md
+
+Co-Authored-By: Bernadette Thalhammer <36998103+thalbern@users.noreply.github.com>",fa1e866a2792a86d760b5cc934c3bd74a9f68a0e
 MixedRealityToolkit-Unity,Merge branch 'users/trferrel/optimize-window-update' of https://github.com/Troy-Ferrell/MixedRealityToolkit-Unity into users/trferrel/optimize-window-update,28038e76c1ac27a1bd8d2d84d9ea8ed276c48284
 MixedRealityToolkit-Unity,"Merge pull request #6838 from Troy-Ferrell/users/trferrel/optimize-window-update
 
 Optimize Window Update",7fafb07345a8be0b469395b236fffd06e45287d4
+MixedRealityToolkit-Unity,"Merge branch 'mrtk_development' into users/trferrel/guienabledwrapper-obsolete
+
+# Conflicts:
+#	Assets/MixedRealityToolkit.Tools/OptimizeWindow/MixedRealityOptimizeWindow.cs",f1ef1bde8112d6eb767723a7574d678974e9759a
 MixedRealityToolkit-Unity,Improve line renderer performance in shell hand ray default,95bfb5b19f9c1300a2139afb92621814e38a9b36
+MixedRealityToolkit-Unity,Update OptimizeWindow.md,4cbe3c9113a0b031493e96bfae4ecda114f9319c
+MixedRealityToolkit-Unity,"Merge pull request #6959 from ms738/patch-26
+
+Update OptimizeWindow.md",77538b642e7cf6800754616757180e9a4bd7782a
+MixedRealityToolkit-Unity,Update comments and add a safeguard for forgotten PlayModeTestUtilities.UseSlowTestHand settings.,77b5ede6f3857b8d1f5b5db7a213ea7894b79b40
+MixedRealityToolkit-Unity,"Update OptimizeUtils #ifdef, spelling, and formatting",c54106dbfad0d7159a1e614ec99db5cdc6fca6ff
+MixedRealityToolkit-Unity,Update MixedRealityOptimizeUtils.cs,0d660a24c78341dd14a6d3196f875b2a52905a2a
 MixedRealityToolkit-Unity,"Merge pull request #6863 from Troy-Ferrell/users/trferrel/line-pointer-refactor-v2
 
 Line pointer refactor for performance",eee7a55e3cfd99526f20ecdbde34480990bf2a5d
+MixedRealityToolkit-Unity,"Merge pull request #6990 from keveleigh/xr-sdk-cherrypicks
+
+BaseSpatialMeshObserver and MixedRealityOptimizeUtils updates for XR SDK",d2aaa45b7d749d560ef11c928965bda19e2c3caa
 MixedRealityToolkit-Unity,Merge branch 'mrtk_development' into fastervalidation,e3285d643de71c91cb07b53880bfabdbdf669564
 MixedRealityToolkit-Unity,"Merge pull request #7039 from wiwei/fastervalidation
 
 Speed up the PR validation pipeline",261ef0c2732b2f75869c3a368281444b683df12e
+MixedRealityToolkit-Unity,"Merge pull request #7039 from wiwei/fastervalidation
+
+Speed up the PR validation pipeline",261ef0c2732b2f75869c3a368281444b683df12e
+MixedRealityToolkit-Unity,"Merge pull request #7039 from wiwei/fastervalidation
+
+Speed up the PR validation pipeline",fd78056bc644251cea9ed3f37d7e8ca34b1c609c
 MixedRealityToolkit-Unity,"Merge pull request #7039 from wiwei/fastervalidation
 
 Speed up the PR validation pipeline",fd78056bc644251cea9ed3f37d7e8ca34b1c609c
@@ -810,9 +894,22 @@ MixedRealityToolkit-Unity,"Merge pull request #7053 from keveleigh/cherrypick-26
 
 Cherrypick PR #7039 from wiwei/fastervalidation to stabilization",06e5f6e206f567c8e4d9e54e4892a25861fac374
 MixedRealityToolkit-Unity,"works but slow, not moving on off threads well",a6bda605b3d5554a24a0c6454e10eef06aa1f09b
+MixedRealityToolkit-Unity,"Checking the Optimize Mesh Data setting at build time. (#7516)
+
+* Checking the Optimize Mesh Data setting at build time.",e6892f60795690886b96c7eff010c0600014543b
+MixedRealityToolkit-Unity,Update Documentation/Performance/PerfGettingStarted.md,fe5dd7453b7dd31967226b04d57b086ff4912886
+MixedRealityToolkit-Unity,"Merge pull request #7532 from Troy-Ferrell/users/trferrel/hand-perf-investigation
+
+Improve Hand Mesh Performance",733e7615c4adfd9c4878c0a125dbc77a8f18d877
 MixedRealityToolkit-Unity,"Merge pull request #7605 from davidkline-ms/reduceRaycastAllocs
 
 Reduce raycast allocations, update performance markers",1c25d77bf7057f79c6b564332c23d5bfe5671123
+MixedRealityToolkit-Unity,"Update Documentation/Performance/PerfGettingStarted.md
+
+Co-Authored-By: Kurtis <kurtie@microsoft.com>",843128258c0dd2ae4c135564e96c5702955d109c
+MixedRealityToolkit-Unity,"Update Documentation/Performance/PerfGettingStarted.md
+
+Co-Authored-By: Kurtis <kurtie@microsoft.com>",fe2528f9287fd459aa1fa0577717d6e1eb81ebf5
 MixedRealityToolkit-Unity,"Merge pull request #7671 from davidkline-ms/instrumentationDocs
 
 Add profiler instrumentation to data provider and performance documentation",c99f5183131b61f656137896ba5f40f3b97b5e23
@@ -831,6 +928,7 @@ Fold in Playspace transform into hand mesh display",ee6cbf9883b311b8f8c3f725d885
 MixedRealityToolkit-Unity,"Merge pull request #7832 from keveleigh/update-optimize-window-ui
 
 Update Optimize Window UI to respect editor theme",2c7ef7b100cb5e71304227840356f4519568cf00
+MixedRealityToolkit-Unity,Speed up rotation joystick / decouple scale and rotation from floor object,faf35a572575ce558a4c5e7b81e39bc2a14e46a6
 MixedRealityToolkit-Unity,"Merge pull request #8251 from fast-slow-still/camScale
 
 Fix spatial awareness mesh w.r.t. camera scale",4d834fad529bce2481a7127f599336b2eb6a848c
@@ -844,6 +942,9 @@ Update tests to be more sensitive to camera transform",ed59c9429c3d6dc86e1a7a12e
 MixedRealityToolkit-Unity,"Merge pull request #8256 from fast-slow-still/offsetPlayspace
 
 Update tests to be more sensitive to camera transform",ed59c9429c3d6dc86e1a7a12eb117a25ac1caa43
+MixedRealityToolkit-Unity,"Merge pull request #8322 from keveleigh/compile-out-2020-utils
+
+Compile out non-2020-compliant code in MixedRealityOptimizeUtils",fb252e6443f7efdfb90feb162c7aa6bcf00cf4c3
 MixedRealityToolkit-Unity,Improving clipping primitive performance and deleting instanced materials,5e3c041ebb55b38c26ddbd5366eddec1573e3504
 MixedRealityToolkit-Unity,"Initial code to fix Issue 8344: Add reading mode support to the Unity camera for HoloLens 2
 
@@ -875,12 +976,16 @@ Remove unnecessary PlayspaceAdapter",6a4d7a20ad5671e50d61000e4590b8ffda36c8af
 MixedRealityToolkit-Unity,"Merge pull request #8929 from fast-slow-still/xrSpat
 
 Remove unnecessary PlayspaceAdapter",6a4d7a20ad5671e50d61000e4590b8ffda36c8af
+MixedRealityToolkit-Unity,"Merge pull request #8905 from DominicAglialoro/user/doaglial/input_recording_service
+
+Improved Input Recording Service With Eye Gaze and Optimized Recording",61b5fb1d5bf3a0b015eba1ec1206052d9ffc686b
 MixedRealityToolkit-Unity,"Merge pull request #9050 from fast-slow-still/gazePlayspace
 
 Apply playspace transform to eye gaze data",a03e5e2e0c9e28c889c8df5c7436de506b59b0ce
 MixedRealityToolkit-Unity,"Merge pull request #9050 from fast-slow-still/gazePlayspace
 
 Apply playspace transform to eye gaze data",a03e5e2e0c9e28c889c8df5c7436de506b59b0ce
+MixedRealityToolkit-Unity,"Performance improvements for CoreServices, ClippingPrimitive and, mostly, for ScrollingObjectCollection.",cb5b2b755d4bd0e1c1b79223f843c850c996feda
 MixedRealityToolkit-Unity,Merge branch 'mrtk_development' into performance_improvements,d30b9b22d23492cd497c3f71e2150814a99416b3
 MixedRealityToolkit-Unity,add note of tools package requirement for optimize window,ca66d6d0769f2b902659d2242bef6c549a15574a
 MixedRealityToolkit-Unity,"Merge pull request #9221 from davidkline-ms/optWindow7897
@@ -1046,6 +1151,7 @@ Previously, if the shader's maximum proximity light limit was reached, a warning
 Co-authored-by: Roger Liu <roliu@microsoft.com>",d8beb6596f8b7b5ac84b738c717892deb6a6c0d4
 vr-annotate,Added bigger scene for performance tests,8f626d40e89351c31bc0b74e954fcee59c17bd0b
 vr-annotate,Optimized keyboard performance,81a8e53310e9166f725c102e1065b5db212dcdac
+vr-annotate,Optimized keyboard performance,81a8e53310e9166f725c102e1065b5db212dcdac
 vr-annotate,Set up performance tests,31115ad9582bfab69fe67fef7761c3554e87609c
 vr-annotate,Removed unused script for performance tests,7f8c6e52fa69b0510f4cd582734892d49ee603e8
 PlayoVR,"Added code for managing sound clips.
@@ -1065,9 +1171,13 @@ that takes over the work of determining if an update should be
 sent or not.",e39f3ac57a2388cd38b496facb74d1b20b92d446
 final-project-prefabulous,Made well fill can faster for more believable filling,aabd093b0b4ea1f9a7b35756f04658a0733050f4
 final-project-prefabulous,"Made well fill bucket faster, and sunflower takes more water to grow.",7019b29b674406edeeed77ebb17641578fe24597
+readyPlayer2,update StandardFast shader to be based on the 5.4 sources.,9e67b1f6a6c73bc71880976c225ac7ba1c5b81fb
 readyPlayer2,"GazeStabilizer Optimization
 
 A queue's ElementAt method iterates internally until it reaches element i. Calling this multiple times within a for loop is very slow.  This commit changes the Queue to a List so that it can iterate more quickly.",323609fb31c0af0603df92df78be6f43da8a64da
+readyPlayer2,"GazeStabilizer Performance
+
+Switching from List to LinkedList to address the BlockCopy concerns involved with RemoveAt.",fa3285bd9dddbb02eaae8af9e5953d731997ea03
 readyPlayer2,"More performance improvements.
 
 Changed int check to bool.
@@ -1091,6 +1201,7 @@ readyPlayer2,"Various fixes to ManualCameraControl :
 - moved new walk code where it's supposed to be
 - exposed fast control key (instead of always using left shit)
 - also removed an annoying debug statement",4649cf5652dcff97f8ec1e32fe4605e74d577fff
+readyPlayer2,[~]Performance updates. Cached raycastResultList in GazeManager.cs;  removed allocations for each input execution in InputManager.cs; Cached animator parameters in TestButton.cs,59463fac90767414e8d9de6349a78e662a6fbf24
 readyPlayer2,"Merge pull request #339 from cre8ivepark/master
 
 Text prefab with optimized dimension and rendering quality",cd2fd2f9569552c37ab9defba108e7b7d9999b12
@@ -1171,6 +1282,7 @@ readyPlayer2,Adding fast configurable shader that should be able to replace almo
 readyPlayer2,"Merge pull request #454 from dbastienMS/master
 
 Adding fast configurable shader",c56554b7aa10670b9a3b1fc03c53bcc9f31af47c
+readyPlayer2,Updated project settings and fixed mismatch GUID on Fast Configurable Shader meta file.,a743ec216682bfb59179fe256b70d06eaedc758f
 readyPlayer2,"Use HashSet instead of List for vertsToRemove
 
 Allows for a great speed up in vertsToRemove.contains(...).",00159b7ccf6329b4240e85be8afa09584d159193
@@ -1185,8 +1297,17 @@ readyPlayer2,major update to fastconfigurable shader,0c1388d96cfee18ee22f592a6d1
 readyPlayer2,"Merge pull request #619 from dbastienMS/master
 
 major update to fastconfigurable shader - custom editor, perf improvements, reflections, rim lighting, alpha cutout, lightmapping support, etc.",e08d97c2f9233191b1dc793466989e16695a0f1d
+readyPlayer2,"Deleted FastConfigurableTest.meta
+
+Unused meta file from renamed scene",c38c6ca9e277637b36dfb2b053042b8c1ad1b6ff
 readyPlayer2,moved standard fast shader to obsolete folder,20b9090912219a719f8236bfa7f7a724dad2b297
+readyPlayer2,Updated all references to obsolete or standard shader to Fast Configurable.,647b564db343cf1f8992fb6c7ef61e4a99ff838e
+readyPlayer2,removed button_unlit_shader was replaced by Fast Configuable.,eecdd665662d1d7e5873a5f4fb3aa8294ae507ed
+readyPlayer2,"Merge pull request #810 from StephenHodgson/HTK-ShaderUpdate
+
+Fast Configurable Shader Replacement",c956db067e1dccac0c77360e256a3701b2e4beb7
 readyPlayer2,Removed WatchForThemeChange variable and checks so that widgets always check for theme updates by default. The performance hit seems minimal and the functionality is valuable enough to promote it to the default behavior.,620472fe6310ff6dbf8630ee5be07164c8c19a99
+readyPlayer2,Updated the materials to use the Fast Configurable Shader,b5c5b62e0904541a7bb1a3ed4e12a3ba1a0cdbff
 UnityClient,"Gaze data iteration
 
 -Added custom created layer for gaze data information retrieval .
@@ -1457,6 +1578,17 @@ XRTK-Core,"Updated Handedness use in the Visualization inspector (#393)
 * Fixed spacing
 
 * Fixed missing bracket",190a501fd9bdedf28af7d8c0bf4906de76ccd8a5
+XRTK-Core,"Transform Extension Collider and Bounds Calculation Performance Update (#448)
+
+* updated GetColliderBounds to reference the colliders it's using to get the bounds
+
+Added another SetCollidersActive override extension method that also uses a reference to the colliders used
+
+* updated SDK checkout
+
+* Update XRTK-Core/Packages/com.xrtk.core/Extensions/TransformExtensions.cs
+
+* added more docs",6ed2030d033708702e6bff609a7f4bd5da0bb76a
 XRTK-Core,"Dev/platform refactor (#521)
 
 * refactored the platforms to include IsBuildTargetAvailible and IsBuildTargetActive
@@ -2254,6 +2386,349 @@ updated all subodules
 
 Co-authored-by: Dino Fejzagic <dino.f@live.de>",dcb7c3a8310c73893d11f5605472ad21570aac25
 XRTK-Core,optimized perf when looking up types by guid (#632),9047a7da6c013b102e84d8847ad881f75334f3b6
+XRTK-Core,"Add support for input and gestures for hand controllers (#552)
+
+* Delete baked lighting settings for base
+
+* Fix ControllerPopupWindow NRE
+
+* Implement internal is grabbing update
+
+* Disable hand meshing by default and assign tracked poses to test profile
+
+* Add IsValidCollision extension to colliders
+
+* Feature/pni change requests (#577)
+
+* Update ColliderExtensions.cs
+
+* Update CollisionExtensions.cs
+
+* updated submodules
+
+* updated sdk
+
+* updated sdk
+
+* Cleanup namespace
+
+* Better fallback pointer pose calculation
+
+* Introduce hand rendering mode
+
+* Implement runtime rendering mode switch
+
+* Update submodules
+
+* Start new hands examples room
+
+* Add canvas UI and 3D Buttons station
+
+* Show button stations result
+
+* Implement set rendering mode station
+
+* Added more stations
+
+* Update submodules
+
+* updated wmr checkout
+
+* updated sdk
+
+* Update submodules
+
+* Add additive scene loader for hands demo scene
+
+* Restore base scene
+
+* Add simple physics demo station
+
+* Cleanup namespace
+
+* Cleanup hand examples a bit
+
+* Update stations
+
+* Implement runtime bounds mode selection
+
+* Update submodules
+
+* Update Ultraleap checkout
+
+* Update physics station
+
+* Update submodule
+
+* Update submodule
+
+* Fix UWP certficate error
+
+* Moved examples to examples repo
+
+* reset editor window options for hands
+
+* Implement pinch strength
+
+* Add pinch strength to hand controller interface
+
+* Update submoduules
+
+* Update SDK
+
+* Use array instead of list for tracked poses
+
+* Restructure pose recognition code
+
+* Improved variable naming
+
+* Add root pose to hand data
+
+* Set root pose for simulation
+
+* Fix joint rotations
+
+* Update SDK
+
+* Remove base converter and introduce Post Processor
+
+* Update data provider to use post processor
+
+* Optimize recognition
+
+* Introduce grip strength
+
+* Enable setters for post processor
+
+* Minor refactoring in post processor
+
+* Removed NONE joint
+
+* Rename joints
+
+* Update submodules
+
+* Extend default hand mappings
+
+* Sync simulation profiles
+
+* Reset popup window options for hands
+
+* Hand input and poses change request (#616)
+
+* Cleaned up RecordedHandJoint(s) to remove reference values
+
+removed null unity object lifetime bypass
+added better exceptions when starting simulated hand controller data provider and Simulated hand data converter
+
+* fixed missing line
+
+* updated sdk checkout
+
+* Implement grip pose
+
+* Adjust processor to joint enum renamings
+
+* updated sdk checkout
+
+* Introduce hand finger enum
+
+* Rename pose recognizer and implement frame throttle
+
+* Minor docs update
+
+* Implement finger curls
+
+* Add Oculus (Desktop) package back in for now
+
+* Disable debug log for grip calculations
+
+* updated tracked pose processor compare (#617)
+
+aesthetic and spell checking in hand controller
+
+Co-authored-by: Dino Fejzagic <dino.f@live.de>
+
+* Implement IMixedRealityHandController.TryGetFingerCurlStrength
+
+* Update SDK
+
+* Disable recognition for now
+
+* Add index curl constraint to isgripping detection
+
+* updated sdk checkout
+
+* updated SDK
+
+* updated sdk checkout
+
+* Implement recorded pose baking and update inspector
+
+* Update SDK
+
+* Remove handedness from hand data
+
+* Update Oculus
+
+* Fix baked data not persisted
+
+* Update SDK
+
+* Fix pose recognizer handedness issue
+
+* Improve pose processor
+
+* Fix IsPointing set to false when pinching
+
+* Update submodules
+
+* Update examples checkout
+
+* Do not pass tracked pose scriptable object outside of data provider
+
+* Update examples
+
+* Update examples
+
+* Fix potential NRE
+
+Co-authored-by: Stephen Hodgson <hodgson.designs@gmail.com>
+
+* Fix potential casting error
+
+Co-authored-by: Stephen Hodgson <hodgson.designs@gmail.com>
+
+* Fix formatting
+
+* Use for instead of foreach
+
+* Revert metro package version
+
+* Rename HandControllerPoseDefinition to HandControllerPoseProfile
+
+* Revert to ReordableList for tracked poses
+
+* Change HandData to be a struct
+
+* Update submodule
+
+* Update example module
+
+* Fix invalid simulated hand position when camera rotation is changed
+
+* Fix generic pointer pose invalid when camera rotated
+
+* Remove redundant properties in hand mesh data
+
+* Update submodules
+
+* Only update hand state if hand is tracked
+
+* Remove obsolete pose extensions
+
+* Introduce hand utilities for pose estimation
+
+* Update submodules
+
+* Implement TryGetHandMeshData
+
+* Remove HandData input event
+
+* Update submodule
+
+* Update submodules
+
+* Implement relativeTo paramter for TryGetJointPose
+
+* Fix IsPointing
+
+* Use TrackingState instead of bool for tracking state
+
+* Fix missed occurence of IsTracked
+
+* Update Oculus
+
+* Fix pointer pose
+
+* Update Oculus
+
+* Fix fallback pointer pose
+
+* Fix pose recognizer left/right issue
+
+* Update submodules
+
+* Remove tracked pose mapping (coming back later)
+
+* Fix hand velocity calculation
+
+* Fix local to world joint translation
+
+* Fix simulation mappings
+
+* Fix IsPointing after teleport
+
+* Update submodule
+
+* Fix simulated hand not reset on tracking loss
+
+* Fix simulated hand position after teleport
+
+* Update SDK
+
+* Update SDK
+
+* Update examples module
+
+* fixed some typos
+
+* updated oculus checkout
+
+* Update example checkout
+
+* Reset hand controller options window
+
+* Update submodules
+
+* fixed submodule checkouts
+
+* Remove tracked poses from hand data provider interface
+
+* Cache bounds arrays
+
+* Allow a bit more tolerance wit IsPointing
+
+* Update submodules
+
+* Update example
+
+* Update modules
+
+* Update submodules
+
+* Update oculus
+
+* Update WMR
+
+* Clean up gizmo meshes
+
+* Remove duplicate vertices in gizmo meshes
+
+* Update submodules and wmr package
+
+* Only apply default head height if not managed by device
+
+* Update submodules
+
+* Introduce IHandDataPostProcessor
+
+* Update submodules
+
+* Update WMR submodule
+
+Co-authored-by: Stephen Hodgson <hodgson.designs@gmail.com>
+Co-authored-by: Simon (Darkside) Jackson <darkside@zenithmoon.com>",24a757e1ea8405c45d4d721565e3d75c78de725a
 VRTK,"feat(Movement): add ability to change play area Y on mesh colliders
 
 It is now possible to move up and down mesh colliders by walking in
@@ -2734,9 +3209,18 @@ vrDemo,optimize for mobile,87a97d0e723b3f149cf90afd44ca412c807633fa
 vrDemo,fix stone tower bevel and optimize scene,28de75ace741594bfdb301c488a27506da4e2069
 vrDemo,optimize,c17767565381d68a8df9e758bc436d08dc6c4237
 vrDemo,optimize,afe09d1524c0716a290c9c795f37e1d44d5922f9
+BeerAmaze,UI Optimized,83e4819aa8783649b243b49401b04659c09198ee
+cube-arena,Optimize rotaters.,3dabbadda9c741575025f60392db9af19a24d797
+cube-arena,Optimize network thresholds.,92d91fe951c8a7352dfa0e03edd2bd30cdc98c19
 cube-arena,Add TransformUtil performance tests.,d9d75d76f4432d04f22c3c0b937b583d0977dd1f
+cube-arena,Optimize NetworkTransform thresholds.,a90e9a57c89da4e593caef7f16a3357fb0ae84f9
+cube-arena,Optimize network transform thresholds.,191f73f8ff96c1b3fb78ebfed62f6f9025607854
+cube-arena,Optimize spray effectiveness.,fb85cd5ae48e19519abddb4bdbf0b391d5aeb889
+cube-arena,Optimize UI on HoloLens.,c858bb206fe9034e440f135d28c3756e7e87774d
+cube-arena,Optimize settings. Add player number to screen.,ce45651013133f5c06fcc663538d028e547ab152
 cube-arena,Flip performance ratings.,7b930d8660c6087d37d2f66f6542fa8a0a3a417e
 wrapVR,Adding a way to control the OVR performance / FFR levels from the VRCapMgr.,5ca29e1e7d86fe3ac36bd9a933ca72f59ee57990
+EscapeMuseumVR,refactor: Optimized the use of port animation,d43672e70735613321d08a5904513a995bd1a633
 VRsus-guARdian,Fixed ARKit code to work with networking infastructure,fb90533e90f76d131bcdcb8c04203b97441cccfb
 VRsus-guARdian,Finished slow trap and test/starting area,d851e256bbdf3e6a307b7d156ef456fe1a0f7722
 VRsus-guARdian,Fixed movement jumping to rocket hover and added slow trap,3893971559120b73ed79e472cf0bb92f836b5a2a
@@ -2747,6 +3231,7 @@ VRsus-guARdian,Fix slow trap trigger and trap toggling,7427d01b16364933ac4567680
 VRsus-guARdian,Added Trap Wall in replacement of the slow trap,9d32bf9463051f1c0186de782874e21e95e170a2
 VRsus-guARdian,Finished slow/swamp trap,15037116f4289f6ec50d590c488e1e371bafcb36
 VRsus-guARdian,"Updated relic material, added particle effects for slow and rock debris",680bc89bcda074c942b038a41d258dc3b4131743
+VRsus-guARdian,Optimized particles,b3e3376c0303ab2d5d46a85b0bdef3726e9e18e9
 VRsus-guARdian,"Change health UI
 
 added lifes, invisibility and slow. Don't what to do for invisibility
@@ -2768,6 +3253,18 @@ This reverts commit 44997d580a61aafe3d235e414048dd296e61ffbd.",4421501a6a3f6de33
 ChemViewAR,Added decimated ibuprofen model for performance testing,a54a44f0c874c97a93c5e27386e6774e91b7667e
 ChemViewAR,Added improved ibuprofen structure for performance testing. Improved performance in MoleculeController script.,54ebcaf3644d4753f67cbd5d4b13402694b2a6f8
 ChemViewAR,Improved all molecule rendering performance. Added NaCl test molecule.,d3400ba8921591a9a7dcd60d85a6c07c345c1309
+Snowfield-VR,Optimized baking and lighting,a8abe6c11ff00694f984f93caa1d82217baa2ec0
+Snowfield-VR,Merge branch 'feature/Optimize_Request_Structure' into develop,639be34062d5466171731c4ff3cb89372777877a
+Snowfield-VR,Optimized the fuck out of the scene,e984aa85e804ceafc2b41bd781edd541a00e42d4
+Snowfield-VR,Optimized even more fucks out of the scene,799dfa27410d97d14a0482446b3365822f1b6a45
+Snowfield-VR,Optimized Outline Shader,3a8d0ba3245ce82f58af34266321525a4ea97ca8
+Snowfield-VR,Merge branch 'feature/Optimize_Textures' into develop,3c14081a2a39b05d8808368586ed5f01e4390752
+Snowfield-VR,Merge branch 'feature/Optimize_Textures' into develop,4e36d083b380537d28cc5f31cb2f6397f8aa3cb1
+Snowfield-VR,Optimized mail event area,32b2d295c44ae5d59529538a39f83b49776de975
+Snowfield-VR,"Added alot of stuff
+
+Optimized stats container, finished dropping items, added ai equip logic, alot of bug fixes",bb0ccf312f25dcf0d1cbe0848f28fd9de4825b14
+Snowfield-VR,Optimized Portals,aef438c71a53856b5133a3d84f2e94c76d3084a9
 MoonMotion,"v.1.0.6
 
 • archived the Booster Jet Smoke and Sparks particles into a prefab, to save performance by default",ba01c96d36bc7db3ea865fba69fe0816d8c50508
@@ -2791,6 +3288,17 @@ MoonMotion,"v.3.0.0
 • organized utilities
 • updated Git Ignore for plugins not distributed with the toolkit
 • rave powerup now always turns light off instead of toggling",a85ab3ab6a09d4146c16240381dd9d3e2d798634
+MoonMotion,"v.10.5.0
+
+• added Build scripts DefineMoonMotionToolkit and DefineSteamVirtuality
+• defined ""MOON_MOTION_TOOLKIT"" and ""STEAM_VIRTUALITY""
+• in #auto, implemented necessary conditions using these defines
+• updated Build explicit utility as needed
+• created CharacterExtensions
+• updated StringExtensions with splitting and joining extension methods
+• removed unnecessary using in TransformExtensions
+• implemented necessary compilation conditions in Kinematizer and Slower
+• fixed return type of multiple extension methods in IEnumerableExtensions",72a52ea3ee262c1e9e69798321a56b289b7b1d9b
 VRLabyrinth,Little bit faster touchpad movement,ce4ad70c5854c16e02d6602e21be81bffde95764
 VRLabyrinth,decrease size for performance,0b8b02b2d4e39823d54fe35e8dccb1ea6b8e5ffd
 Elektronik-Tools-2.0,Added fast point cloud,deb34ead13092d19fd1ccb57072ca31c67ce3ed8
@@ -2799,6 +3307,7 @@ Elektronik-Tools-2.0,"reorganized script system, added new memory efficient clou
 Elektronik-Tools-2.0,fast cloud of observations,3ad4909d90c5b28d107c29fb7c1e5ef2dd2dc8d1
 Elektronik-Tools-2.0,fast observations,116cd85ab5e218f4a3b3b8372aaccf45f8d95549
 Elektronik-Tools-2.0,"common interface for fast point clouds, common interafece for point clouds meshes, common interface for SlamObjects, refactoring",c6b8b98f26288cd4c2c1b4abb7f0d51732452638
+Elektronik-Tools-2.0,Accelerated online,d8cd95c7c0fcda0a94b120c9f6df73c6c34a4092
 Elektronik-Tools-2.0,"more performance and fixes, online VR for Steam",2a84fc88dd812e34c7c6dc292ba70ebe12eac82f
 Elektronik-Tools-2.0,"Migration to .NET 4.x Mono, accelerated files parsing, removed as deprecated GUI Console.",77e1f4c3165c7d7d2dee18ec995c6e7f5abaa016
 Elektronik-Tools-2.0,"Merged PR 9: Enabled VR features
@@ -2866,6 +3375,152 @@ Elektronik-Tools-2.0,"Merged PR 11: General reworking of packages handling code
 Elektronik-Tools-2.0,Memory and performance leak in set active subscription fixed,6970db7501dcfc168e65ada36a3eb4dd46209d2a
 Elektronik-Tools-2.0,"increased performance, refactored namespaces, reworked containers, added container with connections managment, modified prototypes, example is test",3e2d48175e87674775c9b7ca2f2efe51e535a30f
 Elektronik-Tools-2.0,Increased lines performance,18f22fd8b1e6468f88d2f4b748acb8e041cfa6e6
+Elektronik-Tools-2.0,Now points and connections work without SlamMap and Fast*Cloud classes.,8f394d674dc3e266b0957724779bd53024139292
+Elektronik-Tools-2.0,"v3.0.0 (#16)
+
+* update to newer Unity, fixed bug with VRTK NullReference exception in VR mode.
+
+* serialization was changed from binary format to json format for better compatibility with future builds
+
+* removed useless constructor from Setting
+
+* added logo, files with maps can be associated with Elektronik
+
+* reworked slam map, tested online mode
+
+* removed some obsolete classes, offline reworking, gradient lines.
+
+* remove meta, some impls for gRPC and Protobuf
+
+* Initial implementation of protobuf protocol. Thread-safe clouds. Removed unused assets. *.meta files fix.
+
+* added plugins libraries, .gitattribute update
+
+* Added main thread invoker, fixed offline helmet movement, removed deprecated commands
+
+* increased performance, refactored namespaces, reworked containers, added container with connections managment, modified prototypes, example is test
+
+* Increased lines performance
+
+* new controls for free fly camera, added cxx tests, several fixes
+
+* added offline test
+
+* added usage documentation, cmake improvements
+
+* usage typo fix
+
+* merge fixes
+
+* csharp tests fix, added converter, added PacketPb extensions
+
+* Automatic protoc compiler moved to separate assembly, and now it can generate files even with compile errors in project
+
+* Now ProtocCompiler assembly compiles only for editor
+
+* Migration from SteamVR1.2.3+VRTK to SteamVR2.7.2
+
+* Updated to Unity 2020
+
+* SteamVR now working in Unity 2020
+
+* Now elektronik can draw planes
+
+* Infinite planes now works in online mode
+
+* Infinite planes now works in offline mode
+
+* Temporal scripts removed
+
+* Now user can disable planes rendering in settings
+
+* Elektronik now can receive and draw images from camera in online mode
+
+* Elektronik now can receive and draw images from camera in offline mode
+
+* New point cloud renderer
+
+* Elektronik now can render additional observation data
+
+also small gui changes
+
+* Optimisations for PointCloudRenderer
+
+* New optimisations. Now it can seamless render up to 4 millions points
+
+* Batched particle point cloud
+
+* Batched procedural GPU drawing
+
+* Now all types of clouds draws procedurally
+
+* Now points and connections work without SlamMap and Fast*Cloud classes.
+
+* Now one cloud renderer can be used by many containers. Also Observations work without SlamMap
+
+* Tracked objects work without SlamMap
+
+* Removed unused classes and fixed some warnings
+
+* Now user can disable some containers for render
+
+* Now user can change points size in runtime
+
+* Command chain in online mode now binds through unity editor
+
+* Create main.yaml
+
+* Fixes in name style
+
+* removed main.yaml
+
+* Fixed info banner
+
+* Changed arguments for containers events
+
+* Build script
+
+* Build script fixed
+
+* Build script fixed
+
+* Documentation. Image test
+
+* Documentation. relative links test
+
+* Documentation. Usage - russian
+
+* Documentation. Data - russian
+
+* Documentation. API - russian
+
+* Documentation. API - russian fixes
+
+* Documentation. English
+
+* Documentation. English fix
+
+* Settings logic changes
+
+* New File dialog
+
+* New File dialog fix
+
+* Now version is showing on every scene and auto increments on builds
+
+* Typo fixed
+
+* Fixed images in docs
+
+* Now version is showing on every scene and auto increments on builds
+
+* Version update
+
+* readme, license and .gitignore fixes
+
+* github actions workflow
+
+Co-authored-by: Pavel Krasnov <krasnovpavel0@gmail.com>",16dac9ac44b069a24ee15d3e6af76ba64042e410
 Elektronik-Tools-2.0,"v3.0.0 (#16)
 
 * update to newer Unity, fixed bug with VRTK NullReference exception in VR mode.
@@ -3014,6 +3669,10 @@ Co-authored-by: Pavel Krasnov <krasnovpavel0@gmail.com>",16dac9ac44b069a24ee15d3
 Elektronik-Tools-2.0,High-optimized observations,4fef6a1cabec0df39b0d0241294791ee9203306d
 gaze_lanterns,Preparation for Heatmap demo: Moved recording to main thread to improve performance.,f9b910972f3c8efc5a849f39f3be440a1a6e96e1
 jet-dash-vr,💻 Increase the field of view of the camera to make it look like we are going really fast,91e88d8ac0f7c7f390c3cebbb762ca98acfc8afc
+jet-dash-vr,💎 Performance updates on PlayerControl,ffec488fcefd844458dbb6cfbdbed378fb9429e3
+jet-dash-vr,💎 Performance updates on PlayerScore,c50967fbc783673ed3599042793f9a52dab8cb17
+jet-dash-vr,💎 Performance updates on PlayerCollision,538505cd7a0423a20128434c057d14662eaf2d9e
+jet-dash-vr,💎 Performance updates on PlayerHud,f195d40c7fb41ab20e7c96d6dbffeaf7911d5514
 jet-dash-vr,feat(#82): add speed up powerup model,154423069e9fee9e64a334814dc621cd0c4ca35d
 jet-dash-vr,feat(#82): add collision to speed up powerup,87a03e4eae8ac031f4b4c6939a77729802037317
 jet-dash-vr,feat(#82): add speed up to powerup spawner,97cccb77fd570359e5ab079bac69cc3a2e6e00db
@@ -3026,6 +3685,9 @@ jet-dash-vr,feat(#82): speed up and slow down boosts,a0d1cf4373e030f1576ff80335e
 jet-dash-vr,refactor(#133): make the starting and slower ships faster,fa0a11160b473e976646deeb9641cd8fc3219a85
 jet-dash-vr,refactor(#133): make the starting and slower ships faster,fa0a11160b473e976646deeb9641cd8fc3219a85
 vr-pacman,Refactor and performance updates,7600b1e22fe65534c24e170a7441b915921bf8b5
+Huis-van-morgen,"BAM House
+
+Performance improvement (surrounding houses updated)",36e2d9fd2de6a8a3e44a2609915d00f7155344e1
 simview,Tweaks to commclient and molecule system to reduce channel switch latency,f4396a6aa7414983ef5434d43eeff50f1bf0efaa
 PlanetariaUnity,"More efficient optional<T>, no RTTI",0d7813a03177b5381e4ecfa61435a87fca50b374
 PlanetariaUnity,GitHub Issue #85: ArcRenderer (inefficient-buggy?),e7d9cd6716943372350addd5e7d34a02c496e42b
@@ -3039,28 +3701,55 @@ PlanetariaUnity,#102: Debris Noirs optimization - I am an idiot; I just needed t
 PlanetariaUnity,#102: Debris Noirs optimization-attempt seemed to slow down the system,134a940ec1b0ac8647d189c2890f433a3f4cffa4
 PlanetariaUnity,"#102: Debris Noirs -- finalizing the version with fast graphics and real, proper dynamic batching (~7 draw calls with 260 objects), rendering bugs still exist but it's almost done",2c4d2dcaae9ab39b18dc801cdc16c6d4ee742ec9
 PlanetariaUnity,"After a long vacation, finally working on 1) deprecating Unity slowly by genericizing the code (probably won't move off for ~6 months) and 2) working on collision systems now to make porting the code easier",0fcc27dcf249e1b72b776869bfe5b8ec619da6c4
+EditorXR,Optimize CustomClipPlanes shader,18af9f731cd873ab1e957d9cd263b9ce249fcaf5
+EditorXR,"Optimize InstantiateUI search for InputField; Expose pointer event on RayButton;
+Changed NumericKeyboardUI setup logic",a6b8f97de6847d95c09c5536e6b5ae039a34d132
+EditorXR,Cleanup materials in OnDestroy; Apply suggested fixes from PR review; Optimize a bit,d5ac8bc22f1564a1fadf6b492460befc5297dc1d
 EditorXR,Improve EditorVR performance (requires 5.4.1p1 build),2018bb6a0cd925e7772de211c9e58c571fb10acc
 EditorXR,Optimize workspaceButton shader performance to the degree that artifacts aren't visible,d08d67e92471449fdfe98535cebff5a7a9984c77
+EditorXR,Optimize workspaceButton shader performance to the degree that artifacts aren't visible,d08d67e92471449fdfe98535cebff5a7a9984c77
+EditorXR,ZWrite no longer needed in WorkspaceButtonMask shader; Optimize Frag in shader as well,a4ab5c7d811be60cd0e7923a4606f36f3d0b99df
+EditorXR,Optimize/cache the many constant lookups occurring in the setBounds call in WorkspaceUI,57b1fe621bb6a8b268ebb280f0484b4641ea48d6
+EditorXR,Optimize & add support for new shaders/queues in workspace bg highlight gradient shader,8e2161baafe25f8b08d9c15ac2bf39e7d3e96040
+EditorXR,Fix mallet bulb scaling; Fix triggering keys from below; Optimize emission code,ba3348e186ba46535c440f350d2cda1c79971dbb
+EditorXR,Optimize performance,2eae854ee6f350769691515fd551bda4c667e551
 EditorXR,Optimize performance,2eae854ee6f350769691515fd551bda4c667e551
 EditorXR,"add undo to annotation tool
 optimize generated mesh handling",37d4267517fb73e44ae69768c34ad5d574f75ddb
+EditorXR,Fix intersection IsNormalized error; Optimize mini world ray origins,6be109ac41da1126f3289bc96a60c10da72e4ebf
+EditorXR,Optimize ConstrainYawRotation,2ceea32e2cb4e116ef46599a1d3fc7eaf5720efb
+EditorXR,Speed up the duration of the semi-transparent radial menu transition,a3804fd4cf612560fd8e6022d9481e8793229db8
+EditorXR,Speed up WorkspaceButton transition durations,f89224843148cf1ca55b260624ac33ac57ae66cb
+EditorXR,Speed up gradient button begin+end highlight animations,52475201fe5f22e71254344bcbdeecdc1b023122
+EditorXR,Optimize setup of PinnedToolButton order when selecting an existing (button's) ToolType,62fa91f60acbcf5ca7a21f50ea2733c8120a62fa
+EditorXR,Optimize scope of shapedTransition variables in WorkspaceButton,a43c1d725f53e0d49b4f2c5023808e958b323e03
 EditorXR,Clean up GC and improve performance,7b4d7acc74a5c8d109f52279f761a661922601b9
+EditorXR,"Merge pull request #251 from Unity-Technologies/improvements/schoen/hierarchy
+
+World Scale Performance Fixes",049c3f23d31f549c309e31f544b3b71f596c4f54
 EditorXR,"Made a special velocity tracker that tracks the 'shake' velocity of an object by comparing its total motion to its final range of motion.
 
 Added this to the two handed proxy base to detect controller shake - detects a 'shake' while not firing during even fast cursive writing in the annotation tool.
 
 Also cached the shake feedback request since it never changes.",0434342ac1be11a73445a351971f039344a66d00
+EditorXR,Optimize DriveTransform logic in TransformCopy,624228e131a8d78590e9b3cd925ce64ced2663fb
 EditorXR,"Fix performance issues with block selection and large selections;
 Update m_Name in SDF font assets",64851330066d5ab8c4dff259dc904f257316611a
 EditorXR,Prevent camera from performing a very fast (shortest path) rotational correction when being enabled,d8de3e74f5969ce489f5e93c508abf490f0b35e7
+EditorXR,Optimize switch statement in SpatialInputDetectionModule's update loop,14f65ce1d3719ab4f4dcdf7a834a50a18fe22f57
+EditorXR,Optimize new image effect copy logic in VRView; clean up formatting & conventions as well,2496266d393a27d8e4c6be0e47c44f1720ca2cdb
 EditorXR,Misc performance improvements,6cd777cefc53ef2df5f595541ae1d12bb20d83b4
 EditorXR,"Add new optimized plane mesh, utilized in SpatialUI",ef90e88c81bf83e48507481c93b2a39886769df0
+EditorXR,Optimize logic & cacheing throughout SpatialUICore,1a0a5904fdca892b21b484169c1e450ed9b882a4
+EditorXR,Optimize logic in AdaptivePositionModule,6ffed1f145e5223e412781fa811e35db39f62411
+EditorXR,Optimize ray aiming at SpatialUI logic in SpatialMenu,7596c72081d9a80dd56a29ea33cb36feda58cf9d
 EditorXR,Improve intersection testing performance,8d8d92aa83eefbf68aa8bc65f80c44fd97fbb96d
 EditorXR,"Merge pull request #504 from Unity-Technologies/improvements/amir/intersection-perf
 
 Improve intersection testing performance",c440d93322bbc3fb0d33f31c391d18d5611cb54d
 EditorXR,Refactor context UI to not use GUILayout for performance,75a816faa1aea2befe7aef2250f24a5cfe68c465
 EditorXR,"Reduce the angular range that enables the foot-indicator visuals, displays at unintended times less often; speed up the foot-indicator show/hide animations",86126241dde8b95403a2f19494c0e5323a1c99b5
+EditorXR,Optimize the buttons being hovered by ray check in SpatialMenuUI's SelectCurrentlyHighlightedElement() function,7b2de94028c6d2761adea5a2566a1e56275ae5f3
 EditorXR,"Merge pull request #522 from Unity-Technologies/improvements/schoen/perf-misc
 
 Misc performance improvements",dcdd6eba72210c9594e3c06b5e53824aa860e8ba
@@ -3073,6 +3762,10 @@ EditorXR,"Merge pull request #14 from unity/fix/performance
 Improved performance in 2019.2+ with a no-alloc version of GetComponent",ef10efd6eb2ac445ab90425e86b5963c118bd172
 EditorXR,Use UtcNow for double-click check because it's faster,3e9e734b3372e77d8fab861fc7179a10ebead4c6
 OSVR-Unity,Adding fast first pass from Jason Morano at Bully Entertainment.  Removed the Debug/ and other directories with large compile objects in them.,0ec4802ff50072d1f8155eac84f204af65d153bd
+OSVR-Unity,"Merge pull request #37 from DuFF14/LatencyUpdates
+
+Latency improvements. 
+Read display descriptor file from disk as opposed to being hard-coded",62319a64d9e1a19154ee12fb04575981e04198d4
 OSVR-Unity,"Set maxQueuedFrames to -1 to minimize the number of frames queued by the graphics driver. Reduces input latency.
 Force optimal framerate and player settings.",ab6948473ca03464f5aeb98f5b978ff570918757
 OSVR-Unity,"Added new, much faster OsvrMirrorDisplay component. Removed Direct Mode Preview.",5fa8f9ab7930499fd68a4f5fff78a6fd3a050018
@@ -3081,6 +3774,7 @@ OSVR-Unity,"Merge pull request #219 from nanospork/fastMirror
 Adds OsvrMirrorDisplay component, removes Direct Mode Preview",61264afc354d9ac1f080b6575dc41246c287cc42
 VRGIN,New attempt to get better performance.,e1fd3e48dfb01622d82dca44926352eb71b924d8
 VRGIN,Attempt to improve performance.,2c976c15a1702367758b5ebec12aa201dd057f5c
+VRGIN,Optimize one-handed menu input for Rift users.,bb6a92f8dc6f9f2814c18907ca4ff0b061f43d83
 VRGIN,Various attempts to improve performance.,9479f3ad9ad9d0482554956284fd099b8ff798bf
 NewtonVR,Scene view slowdown fix. Trigger collider gets auto set to the hand's layer. Slider gravity fix,592d3feb8820fd0c7a03e1c898fa659f8b274855
 NewtonVR,"Source updated for Unity 5.4.0b24 + Small scene changes: Gun fired so fast projectiles went through colliders, additional materials so that the NoGravity Interactables look different",56f57d8d23618d37f17ae1061f23f6f2142e0f24
@@ -3093,6 +3787,7 @@ By default we're not automatically setting your physics time step to 0.0111, whi
 NewtonVR,"Added NVRInteractables.GetAllInteractables()
 
 Should be a bit faster (and less allocations) than getting all the keys and turning that into a list / array",dbbab95c1b5115b969755a3fb90637fa54da37aa
+ViveGrip,Optimized logic,a2198e18fcd48617deb241b4a557f2258b8b589e
 unity-sdk,"* WatsonCamera as test
 * Xray scene some minor changes
 * Constant animation event names
@@ -3110,6 +3805,48 @@ ViveInputUtility-Unity,"Disable ExCamConfigInterface Pixel Perfect option
 
 This causes low performance in 2017.2",ed8890e1f04bc4b2d2fab6eda9cc1ba2223432a7
 ViveInputUtility-Unity,Optimize updating define symbols performance,f8b43116bc437d3ffd6ef1cd290343e05e130e55
+ViveInputUtility-Unity,Optimize updating define symbols performance,f8b43116bc437d3ffd6ef1cd290343e05e130e55
+ViveInputUtility-Unity,"Optimize method indexing devices in UnityXRModule
+
+GetDeviceUID is called each frame for each devices
+Now use GetHashCode instead of combined string to identify devices",08a9e234d671710fd27a1882dbd635c082408ac1
+ViveInputUtility-Unity,Optimize converting EnumArray index and support more enum unerlying types,396bf88d42b81350e70bda82721275628e8085a3
+ViveInputUtility-Unity,"Optimize finding types in assemblies and EnumArrayBase resolver
+
+* Speed up enumerating types in assemblies by skipping assembly that
+  is not referencing to the target type assembly
+* Now create EnumArray resolver by definding a new class derives from
+  EnumArrayBase<TEnum>.Resolver. Resolver should provide faster function
+  to convert from TEnum to int value.
+  For example:
+
+```
+class MyEnumReslver : EnumArrayBase<MyEnum>.Resolver {
+  public override int Resolve(MyEnum e) { return (int)e; }
+}
+```
+
+  In this EnumArrayBase<TEnum> generic constructor, we can only provide
+  slower convert function like ""(int)(object)enumValue"" or
+  ""EqualityComparer<TEnum>.Default.GetHashCode(enumValue)""",54a5a3b5bc4c3c63956a1550bffb7fc423821294
+ViveInputUtility-Unity,"Optimize finding types in assemblies and EnumArrayBase resolver
+
+* Speed up enumerating types in assemblies by skipping assembly that
+  is not referencing to the target type assembly
+* Now create EnumArray resolver by definding a new class derives from
+  EnumArrayBase<TEnum>.Resolver. Resolver should provide faster function
+  to convert from TEnum to int value.
+  For example:
+
+```
+class MyEnumReslver : EnumArrayBase<MyEnum>.Resolver {
+  public override int Resolve(MyEnum e) { return (int)e; }
+}
+```
+
+  In this EnumArrayBase<TEnum> generic constructor, we can only provide
+  slower convert function like ""(int)(object)enumValue"" or
+  ""EqualityComparer<TEnum>.Default.GetHashCode(enumValue)""",54a5a3b5bc4c3c63956a1550bffb7fc423821294
 ViveInputUtility-Unity,"Optimize finding types in assemblies and EnumArrayBase resolver
 
 * Speed up enumerating types in assemblies by skipping assembly that
@@ -3207,6 +3944,28 @@ the grab action is successful. This makes it easier for catching items
 as they fall fast, or the ability to swipe and grab an item without
 being particualrly careful with the grab motion.",d792617ebf24b740bcfe8039d9a468bee7d4dcfd
 InputSystem,FIX: Horrible performance in input device debugger window.,dce7b85eb8489e44782058f2f7419aa657f5d688
+InputSystem,CHANGE: Speed up initialization of Keyboard devices (#447).,436f80e172d9823a1cf706245b8129184bf96fad
+InputSystem,"FIX: ReleaseOnly not triggering on actions with multiple bound controls (#492, #526).
+
+* FIX: ReleaseOnly not triggering on actions with multiple bound controls.
+
+* CHANGE: Flesh out test according to review.
+
+* CHANGE: Remove InputAction.lastTriggerXXX APIs.
+
+* CHANGE: Tap, SlowTap, and MultiTap now respect button press points.
+
+* NEW: Add parameter editors for Tap, SlowTap, and MultiTap.
+
+* FIX: Failing test due to change to PressInteraction.
+
+* CHANGE: Add test for button press points on interactions.
+
+* FIX: All tests in StandaloneOSX player green.
+
+* CHANGE: Fully enable timeslice code.
+
+* FIX: Memory leak in test.",91847a568301cb908e71457ca082efcd9985b54a
 InputSystem,"Handle parent directory renaming whilst asset is being edited. (#1049)
 
 * Added test to ensure that an exception is not thrown when Saving input asset and the parent directory was renamed. (case 1207527)
@@ -3237,6 +3996,45 @@ InputSystem,FIX: Bad performance in Input Debugger with high frequency devices (
 InputSystem,"FIX: Bad performance in InputAction.controls when empty (case 1347829, #1437).",fb983da7409a20e278b7e0a733b29c96322f566a
 InputSystem,CHANGE: Improve performance of HID descriptor parsing and device matching (#1579),6808810b799e72b896bebffbde208eba9b3f1930
 InputSystem,NEW: Improve performance when reading control values (#1569),d6c4f36f1dcb6f937dae689b355f2617d1de2a70
+InputSystem,"NEW: Expose displayIndex for multi-display support (#1623)
+
+* Add support for distinguishing pointer events from multiple displays
+
+Tests should cover every new code path.
+
+* remove virtual keyword and add missing layout entry
+
+* fix array out of bounds exception due to EraseAtWithCapacity mutating count
+
+* update precompiled layout for FastTouchscreen
+
+* remove uneeded displayIndex setter
+
+* remove platform specific defines
+
+* more cleanup on TouchSimulatorArray handling
+
+* improve displayIndex property inline doc
+
+* set displayIndex outside of getIndex function
+
+* Fixed formatting violations in UITests.cs
+
+* Updating tests for multi-display input changes
+
+* formatting
+
+* Fixing multi-input test
+
+* Ignore 3 failing tvos tests. Seem related to ISX-448
+
+* remove unwanted changes to DefaultInputActions
+
+* fix changelog conflict and moved to Added section
+
+Co-authored-by: Eric Fulton <eric.fulton@unity3d.com>
+Co-authored-by: James McGill <james.mcgill@unity3d.com>
+Co-authored-by: James McGill <jamesmcgill@users.noreply.github.com>",9972e7c4392ae56bc067f009584bef0afb6afef1
 InputSystem,"Updated performance testing framework packages to their latest version
 
 Updated utp-reporter/performance packages to unblock building runtime on 2023.2",d3ff56a05a857748a827d1d47f71e039a7694f3a
@@ -3363,6 +4161,46 @@ Evaluates cases when there are no control changes or reads from the user to asse
 When using ReadCacheValue for devices that have state updates every frame, there's a performance cost.
 
 * Add missing comments to some tests",335be330d5a524faa0f818b0725f25eb4f5f0470
+InputSystem,"CHANGED: Expand Optimized Controls performance testing (#1905)
+
+* Update existing performance tests
+
+It will make the tests run for more cases to see the impact of each internal feature flag.
+
+* Add tests for more use cases
+
+Adds a gamepad and mouse tests. This showcases that the optimizations won't improve performance for all use cases.
+
+* Add test which only calls InputSystem.Update()
+
+Evaluates cases when there are no control changes or reads from the user to assess if there's any impact by the optimizations.
+
+* Add test that shows degraded performance.
+
+When using ReadCacheValue for devices that have state updates every frame, there's a performance cost.
+
+* Add missing comments to some tests",335be330d5a524faa0f818b0725f25eb4f5f0470
+InputSystem,"FIX: `USE_OPTIMIZED_CONTROLS` feature flag reduces performance in built players (#1906)
+
+* Check optimization valid state in Editor only
+
+* Update documentation
+
+* Update documentation with performance impact on PlayMode
+
+* Add READ_VALUE_CACHING performance tests
+
+These tests add a use case of performance cost and improvement when state changes are done to composite controls vs float controls
+
+* Update documentation for control value caching
+
+Updated this docs to be more clear about the optimization impact of caching control values.
+
+* Redo added READ_VALUE_CACHING performance tests
+
+Previous tests were not very accurate as the performance only shows if there are actions with bindings in the controls we are reading from.
+
+* Rephrase documentation changes",d3f7053b18eea1d7588e59a68fa0bd0f7bfc7e05
 InputSystem,"FIX: `USE_OPTIMIZED_CONTROLS` feature flag reduces performance in built players (#1906)
 
 * Check optimization valid state in Editor only
@@ -3580,10 +4418,15 @@ Co-authored-by: Jo Dawes <49957016+jo-unity@users.noreply.github.com>
 
 Co-authored-by: Jo Dawes <49957016+jo-unity@users.noreply.github.com>
 Co-authored-by: Alex Tyrer <AlexTyrer@users.noreply.github.com>",94c260e2a20995cd270a3c6739fe6a5ef830a1ff
+InputSystem,"FIX: Fixed `ArgumentNullException: Value cannot be null.` during the migration of Project-wide Input Actions (ISXB-1105) (#2037)
+
+* Revert ""CHANGE: Performance improvement - removed project-wide asset migration code (#2025)""
+* Fixed ArgumentNullException during the migration of Project-wide Input Actions",00347368b01ede53de861f6d08009232d460858e
 InputSystem,"NEW: Add two performance tests measuring frame times (#2027)
 
 * one test tries to simluate keyboard/mouse FPS input
 * one test measures time it takes to do nothing at all",0a39ee0065cea4f0930aa6a2e428d809166f3270
+MixedReality-WebRTC,Optimize mrsMemCpyStride(),e48ce9c87e3f7c5181a3712b13728b661015ad00
 MixedReality-WebRTC,"Add support for video profiles on UWP (#67)
 
 This change adds support for video profile selection on UWP, as well as resolution and/or framerate constraints for video capture. It enables selecting lower capture resolutions and/or framerates on devices where the default video capture format impacts performances, like HoloLens 2.
@@ -3591,6 +4434,10 @@ This change adds support for video profile selection on UWP, as well as resoluti
 This builds upon the upstream change webrtc-uwp/webrtc-apis#24 adding support for video profiles in the UWP layer of the core WebRTC implementation.
 
 On the Unity side, the `LocalVideoSource` component has been modified to introduce a new `LocalVideoSourceFormatMode` parameter which, when set to its default value of `Automatic`, will force selecting a resolution of around 1000 pixels in width on HoloLens 1 and HoloLens 2 to save on battery and CPU usage and increase performance. This behavior can be overridden with the `Manual` mode.",fa9eef323adf943fe49e9d43a7c178b02e39a1f2
+MixedReality-WebRTC,"Optimize Unity shaders with half type
+
+Replace high-precision `float` type with medium-precision `half` type in
+Unity shaders.",2f93b05df3bd9a2f8e4cc7d7d4e74641d59450f9
 MixedReality-WebRTC,"Add single-pass stereo instanced to Unity shaders
 
 This enables faster rendering on HoloLens and other stereo devices.",3036c8857a43dcd1ba7a250a8cbffabdeacb0bdf
@@ -3603,6 +4450,10 @@ debugging.
 
 An ETW recording profile (*.wprp) is provided in `tools/tracing/` for
 users to record their own trace.",fba7dabff4661dd589aba7be1d0971805d7feafa
+MixedReality-WebRTC,"Fast-forward node-dss polling after receiving a message (#194)
+
+When receiving a message from the node-dss server, reduce to zero the time until next poll,
+in order to make the signaling more reactive to short burst of messages (e.g. ICE candidates).",f2c45d2f868f93064a76b88a2f65f7828376c65e
 MixedReality-WebRTC,"Add Android build to Unity release pipeline (#407)
 
 Add building the Android library `mrwebrtc.aar` to the Unity release pipeline
@@ -3652,7 +4503,13 @@ UniVRM,"Merge pull request #85 from dwango/fix_VRMFirstPerson_Setup
 
 Remove LINQ for performance",0707df8b33c2f6e7841dbe3291d107a2c099cb72
 UniVRM,optimize comparing struct in dictionary key,6d5e3f871d3c8a351d428099b306ec738a3f4dd0
+UniVRM,"Merge pull request #94 from TORISOUP/add_struct_comparer
+
+Optimize comparing struct in dictionary key",14cff05dcf0c3fb3a803a4a1a51624bf07ed7da7
 UniVRM,optimize comparing struct in dictionary key,19bdca0422ca5a228d2a62f9ffe8e3c9811d8d71
+UniVRM,"Merge pull request #94 from TORISOUP/add_struct_comparer
+
+Optimize comparing struct in dictionary key",796e5861ca6ed1f01c42fc7b33464d6ad0335383
 UniVRM,optimize ListTreeNode Children for large JSON,3b1ed6fef904af8e7568d3e6f9b1489a68dfd700
 UniVRM,"Merge pull request #187 from dwango/optimize_ListTreeNode_Children
 
@@ -3660,6 +4517,7 @@ optimize ListTreeNode Children for large JSON",04b1acab9b71414d90dcdbb5fc9e70cd3
 UniVRM,"Merge pull request #421 from ousttrue/exporter_blendshape_optimize
 
 Add blendshape options to export dialog",9f164da0cf332212042fcec08ad6a4267b8baeee
+UniVRM,Replace string.StartsWith and string.EndWith to string.FastStartsWith and string.FastEndWith,619bb8433126e940b4a7746fdd59132679441420
 UniVRM,"Merge pull request #710 from amamagi/optimize-string-methods
 
 Optimize string APIs",fda4566b05116049b98e6f51bafe1c7ece8a4d31
@@ -3673,12 +4531,22 @@ BuildBlendShape・LoadGeometryAsyncをワーカースレッドでの読み込み
 UniVRM,"Merge pull request #1220 from notargs/feature/optimize_build_hierarchy
 
 ImporterContextのうち、BuildHierarchyまわりのフレームを分散",14967bf6868e3466b85ec50644aa1a92c8b36f16
+UniVRM,Add FastSpringBone,da81c27b8130879e0119c4b8ceed792a6db09a4d
+UniVRM,Add VRM FastSpringBone support,0025182b91ca9ff85678407bca0b775151b4ad62
 UniVRM,Add fastSpringBone support to sample,db1f914aac30fc867c3635ece1a88ac988ab40fa
 UniVRM,"Merge pull request #1263 from notargs/feature/fast_spring_bone
 
 Add FastSpringBone",ee8f8cef72f60e27698722c4f41b06332f2fc41f
 UniVRM,Add fastSpringBone10,5f41b780ae1585b25eb750b08e371856a8532ea0
+UniVRM,FastSpringBone作り直しのため、データ構造を再構築,59df94461eb2cb8abc98cbe06290e1db95fb4575
+UniVRM,Update FastSpringBone10,2c580471f531afe689deeb44f8c7f995055bd7b0
 UniVRM,Initialize fastspringBone on initialize vrm,5939f244cfe600198a78f8ff4978edaa118077ae
+UniVRM,Fix FastSpringBone Reconstruction algorithm,6bae0f507446cb2af36465520ea9365652886acc
+UniVRM,Add FastSpringBone10 core logics,c588d81b4da430b7a1549303f3cc3514cf1953ea
+UniVRM,Add FastSpringBoneBufferCombiner,82e4d99e1b08e6b3d38500fd7b08da01518adc3b
+UniVRM,"Merge pull request #1271 from notargs/feature/spring_bone_10
+
+Add FastSpringBone for VRM1.0",198790b5e66e9340a0ac882d7313d0b9aebdc59d
 UniVRM,Improve buffer construction performance,39e98be2184c1dabe9e4aa4fbbbc975928a31485
 UniVRM,rm fastSpringBoneScope,55d8bcbd1c23eed0ddadea932f1afd3e2fd81d75
 UniVRM,"Merge pull request #1273 from notargs/feature/spring_bone_10
@@ -3688,22 +4556,48 @@ UniVRM,Add fastspringBone docs,d0f5c0f22cf7fd18034ea62f46b0fc1981040f91
 UniVRM,"Merge pull request #1277 from notargs/feature/spring_bone_10
 
 Add fastSpringBone documents",6dc18fc8ddcb78175f3988022e2fd4452b9a986c
+UniVRM,Avoid FastSpringBone in UnitTest,b0a1de9f740676fcac9b9ab4daee2644aae34714
+UniVRM,"Merge pull request #1278 from ousttrue/fix10/fix_tests
+
+Avoid FastSpringBone in UnitTest",7f4fc0b469423fda7b2be19a816c81ba51c3e99f
 UniVRM,"Merge pull request #1300 from ousttrue/fix/fastspringbone_warnings
 
 fix warnings",3fe77cb4bad5a37a3b1b3624450a0a41e1d0d40b
 UniVRM,"Merge pull request #1306 from notargs/feature/fastspringbone_fix_awaitcaller_bug
 
 Hierarchyの構築が終わるまでVrm10Instanceの有効化を遅延させる",0953e00dfaa02d5b349cb9eb9ea551a4b559e06b
+UniVRM,"Merge pull request #1314 from notargs/feature/spring_bone_reconstruction
+
+FastSpringBone1.0の内部構造を動的に変更するための仕組みを追加しました",b407190a80d69d43b52e8c681068a0e74c2c8bd7
 UniVRM,"Merge pull request #1324 from notargs/feature/fastspringbone_bugfix
 
  Normalize quaternion on update headTransform.rotation",4ae9b94e89ede7d1eb481801e356f3491b813629
+UniVRM,"Merge pull request #1330 from notargs/feature/bugfix
+
+FastSpringBoneがMathf関連のエラーを吐く問題を修正",58bf984c9c585d099fe727506de0663e1055fc99
 UniVRM,"Merge pull request #1535 from ousttrue/fix/optimize_readmesh
 
 Fix/optimize readmesh",8303fea05e9622d14614cca6ee0e70acde508bcd
+UniVRM,Fix FastSpringBoneService initializing flow for #1567,700f79a7009f120e369108cdad2d143ece3d6356
+UniVRM,"Merge pull request #1599 from notargs/feature/fix_1567
+
+Fix FastSpringBoneService initializing flow for #1567",80b228003be0e2d31d2a453d75cb24a334f991bc
+UniVRM,"Merge pull request #1661 from amamagi/fix/fsb-reconstruct
+
+FastSpringBoneBuffer.ReconstructBuffers()実行後にboneのTransformが意図しない動作をしていた問題を修正",da0d4d053a0aac729747730c7514850b95299b18
+UniVRM,"Merge pull request #1662 from amamagi/fix/fsb-collider-and-rotation
+
+FastSpringBoneが初期化時のrotationとリアルタイムのColliderのScaleを反映するように",f67e709727c9aaf28025c0be683f39a0b91b1d5c
 UniVRM,refactor fast spring bone,9aaea6e6a1fe270842c05854714b7b24b0284097
 UniVRM,"Merge pull request #1663 from amamagi/refactor/fsb
 
 refactor fast spring bone",075ec7fc5792fd0e4dd9242b7b2a3511f88a9e3d
+UniVRM,"Merge pull request #1679 from amamagi/fix/fsb-ArgumentOutOfRangeException
+
+FastSpringBoneBufferCombinerでArgumentOutOfRangeExceptionしうる問題を修正",f3193caf0765b252023dc1600b77537a76ade058
+UniVRM,"Merge pull request #1778 from Santarh/enumFast
+
+Caching Enum.GetValues with implementation of CachedEnum class",6b41e34071fcc6ad18e5aa9e37f4de4dab78d014
 UniVRM,"Optimize UniHumanoid.BoneLimit.ToHumanBoneName
 
 This change optimizes the following points:
@@ -3716,12 +4610,34 @@ UniVRM,Merge branch 'vrm-c:master' into optimize-bonelimit-tohumanbonename,e7408
 UniVRM,"Merge pull request #1780 from matsutaka-pxv/optimize-bonelimit-tohumanbonename
 
 Optimize BoneLimit.ToHumanBoneName",beb0f79f6afc7c38c25fb2d24213886f9085dda8
+UniVRM,FastSpringBoneに対し、末端ボーンへの考慮を追加するオプションを追加しました,d66fc2498ea0f82012bca741c5ace19d00b9e0aa
 UniVRM,"Merge pull request #1804 from notargs/update_fastspringbone
 
 FastSpringBoneに対し、末端ボーンへの考慮を追加するオプションを追加",ed291eaf0f83b9af37a9f8c33f822b3ededd3116
+UniVRM,FastSpringBoneService manual update,e1e4bfde78d6d3e1f43675775b255769dd2abda5
+UniVRM,FastSpringBoneService.ManualUpdate に deltaTime 引き数を追加,f17bac5b036f9a66b7a83b1db8a2daad65f71f5f
+UniVRM,"Merge pull request #1907 from Santarh/fixSpringBoneApi
+
+Set externalData as initial value in FastSpringBoneBuffer constructor.",434c70f680a0912a5c48e515de3a510ee6aef3c0
+UniVRM,FastStartsWith,44b2e0330df51255b11960d64219048ac5265345
+UniVRM,Changed FastSpringBoneService ExecutionOrder to make sure FastSpringBoneService executes after Vrm10Instance,b8445abf1f94d6128ccd464b9330c494a8ca225b
+UniVRM,"Merge pull request #1976 from virtual-cast/fix-Fast-Spring-Bone-Execution-Order
+
+Change FastSpringBoneService ExecutionOrder To 11010",51c2275f4b6e3b97f35f917c66f22ef186af2ad6
+UniVRM,Speed up ExpressionKey comparison.,01394bbde75a2d8a4f020dc9862a699129edff13
 UniVRM,"Merge pull request #2129 from Santarh/fastExpressionKey
 
 Speed up ExpressionKey's comparison.",bbb4b5c423b921ab61c48f80b9d273113da145f3
+UniVRM,"Merge pull request #2129 from Santarh/fastExpressionKey
+
+Speed up ExpressionKey's comparison.",bbb4b5c423b921ab61c48f80b9d273113da145f3
+UniVRM,Merge branch 'master' of https://github.com/vrm-c/UniVRM into expressionFaster,8950900bb90df41a66a7c4651e9223c313f82b95
+UniVRM,"Merge pull request #2135 from Santarh/expressionFaster
+
+Optimize `MorphTargetBindingMerger` with minimum `Dictionary` usage",e6633dc49580a679b64e5ce72e0bf77d1cc64aec
+UniVRM,"Merge pull request #2135 from Santarh/expressionFaster
+
+Optimize `MorphTargetBindingMerger` with minimum `Dictionary` usage",e6633dc49580a679b64e5ce72e0bf77d1cc64aec
 UniVRM,"Unity2023.1以降でFindObjectsOfType系APIがObsolete警告を出すのに対応
 
 Unity 2023.1以降のバージョンでUnityEngine.Object.FindObjectsOfType系APIがObsoleteになり、次の警告が発生していました。
@@ -3737,20 +4653,40 @@ FindObjectOfType()とFindFirstObjectByType()の違いに関してはドキュメ
 Unity-Technologiesgが公開しているUnity 6000のソースコードを見る限り、動作は同一に見えるためそのまま置き換えました。
 
 https://github.com/Unity-Technologies/UnityCsReference/blob/6000.0/Runtime/Export/Scripting/UnityEngineObject.bindings.cs#L586-L602",018aec1fabecf18eac001705b750eb3a5607b8b6
+UniVRM,separate FastSpringBoneBufferBuilder,7f856bf9453df3906e8b93bbe713cd8f44a56815
+UniVRM,private FastSpringBoneBufferBuilder m_initialData,b69b3760e31bfd7bdd04575da7fb67edcb635828
+UniVRM,FastSpringBoneBufferBuilder を FastSpringBoneBuffer.FastSpringBoneBuffer に合体,7f089f1dd8aa52aeafed06fbb8fee47fddf0c603
 UniVRM,"回転・拡縮に対応するべく SpringBone joint の TRS を質点の位置に解決するように整理する
 
 vrm0 > vrm0.fast > vrm1.fast の順に作業する。３つとも処理内容は同じ",76850ba67cc2e0a49726656e72f56366e5ccda5f
+UniVRM,UniGTLF/Runtime/SpringBoneJobs from VRM10/Runtime/FastSpringBone,9c8c98a5677da8ef5dfeef91d1dd63cec5a98537
 UniVRM,vrm-0.x の fastspringbone の処理は、 vrm-1.0 版と同じものを使う,0f191e5e8fe623ebe09d113e57599e81ed1f56d9
 UniVRM,Merge branch 'master' into feature/vrm0fastbone_use_springbonejobs,6e201b76a0dcc8d416c9ec0994b8aece633cf252
 UniVRM,"Merge pull request #2425 from ousttrue/feature/vrm0fastbone_use_springbonejobs
 
 [vrm-0.x][fastspringbone] vrm-1.0 と部品共通化",8e82e23bf10e057428923f78b4810d1e964cd68a
+UniVRM,rename Vrm10RuntimeSpringBone to Vrm10FastSpringboneRuntime,aac5680eb3419a1f625c831db94fb59e3d2e90c0
+UniVRM,Vrm10FastSpringboneRuntimeStandalone,e53ff877e2e3d4c0697c6cc5626dc1d19df7c8e1
+UniVRM,Vrm10FastSpringboneRuntimeStandalone,c2e203bc0b4585cc0a68e01d7b298d964e71f6ec
+UniVRM,"FastSpringBoneBufferCombiner の責務を分割。
+
+- FastSpringBoneCombinedBuffer 統合バッファ
+- FastSpringBoneBufferCombiner 統合前バッファの登録管理",6917f195f18d6d505ed0b66e0ae623ce650c5a85
 UniVRM,"Merge pull request #2453 from ousttrue/fix/fast_combinedbuffer
 
 [1.0] SpringBone の reset 実装と関連する修正",521cfa09011ba8e47190c4c08593f24abd446be3
+UniVRM,[1.0] Scene配置モデルのDefaultSpringBone を Vrm10FastSpringboneRuntimeStandalone に変更,86e0999a582328f2aa5f62ba03d8f68aed4e9f22
+UniVRM,"IVrm0XSpringBoneRuntime の実装
+
+SpringboneRuntime を介した　reset, reconstruct, scaling係数オプション, externalForce, 一時停止(FastSpringboneのみ)
+の操作を実装",fc117b8332820faea3f742f6da9ba6be2fd13c3a
 UniVRM,"Merge pull request #2459 from ousttrue/fix/fastspringbone_init_tailpos
 
 springbone 初期化の修正。",62b657226b1d13768e77c707d42e92a860179dec
+UniVRM,"add version defines so that UniGLTF, UnityGLTF and glTFast can co-exist",01330749a5107246f1501c64cabc974e6c08e196
+UniVRM,"Merge pull request #2461 from prefrontalcortex/feature/ecosystem-compatibility
+
+add version defines so that UniGLTF, UnityGLTF and glTFast can co-exist",49dd34f17d74a7e4c1d7bba4e57ddb169e7c7c1e
 IVVR,Prepared UI for latency and framerate display,c9c5527fb91ff50dd77c34f1e9bd3e194d59e1c6
 IVVR,Reduced cloth calculations for enemies for improved performance. Moved where health loss spawns to just below the eyes.,2d26fac8b9f5c50efe94c63b3708f2c1f272193a
 VirtualMotionCapture,UnityMemoryMappedFile performance tuning,1c6615e9733f52677f7a3100f47a5a45e2c30a97
@@ -3760,9 +4696,13 @@ unity-arkit-plugin,"Remove slow implementation of video buffer transfer, and cre
 unity-arkit-plugin,Directional light estimate scene and transfer of Spherical Harmonics Coefficients to the light probes in the Unity scene.,4791ff984fdb892790949abc3925014e88d16f8c
 unity-arkit-plugin,"Correct spherical harmonics coefficients for Unity handedness when marshaling
 Put six cameras around sphere to capture lighting from the different directions",3364e0bce0e4516f89ea01781ddbb3b592e6dc4f
+Unity_Hololens_Dev,update StandardFast shader to be based on the 5.4 sources.,9e67b1f6a6c73bc71880976c225ac7ba1c5b81fb
 Unity_Hololens_Dev,"GazeStabilizer Optimization
 
 A queue's ElementAt method iterates internally until it reaches element i. Calling this multiple times within a for loop is very slow.  This commit changes the Queue to a List so that it can iterate more quickly.",323609fb31c0af0603df92df78be6f43da8a64da
+Unity_Hololens_Dev,"GazeStabilizer Performance
+
+Switching from List to LinkedList to address the BlockCopy concerns involved with RemoveAt.",fa3285bd9dddbb02eaae8af9e5953d731997ea03
 Unity_Hololens_Dev,"More performance improvements.
 
 Changed int check to bool.
@@ -3786,6 +4726,7 @@ Unity_Hololens_Dev,"Various fixes to ManualCameraControl :
 - moved new walk code where it's supposed to be
 - exposed fast control key (instead of always using left shit)
 - also removed an annoying debug statement",4649cf5652dcff97f8ec1e32fe4605e74d577fff
+Unity_Hololens_Dev,[~]Performance updates. Cached raycastResultList in GazeManager.cs;  removed allocations for each input execution in InputManager.cs; Cached animator parameters in TestButton.cs,59463fac90767414e8d9de6349a78e662a6fbf24
 Unity_Hololens_Dev,"Merge pull request #339 from cre8ivepark/master
 
 Text prefab with optimized dimension and rendering quality",cd2fd2f9569552c37ab9defba108e7b7d9999b12
@@ -3866,6 +4807,7 @@ Unity_Hololens_Dev,Adding fast configurable shader that should be able to replac
 Unity_Hololens_Dev,"Merge pull request #454 from dbastienMS/master
 
 Adding fast configurable shader",c56554b7aa10670b9a3b1fc03c53bcc9f31af47c
+Unity_Hololens_Dev,Updated project settings and fixed mismatch GUID on Fast Configurable Shader meta file.,a743ec216682bfb59179fe256b70d06eaedc758f
 Unity_Hololens_Dev,"Use HashSet instead of List for vertsToRemove
 
 Allows for a great speed up in vertsToRemove.contains(...).",00159b7ccf6329b4240e85be8afa09584d159193
@@ -3880,6 +4822,9 @@ Unity_Hololens_Dev,major update to fastconfigurable shader,0c1388d96cfee18ee22f5
 Unity_Hololens_Dev,"Merge pull request #619 from dbastienMS/master
 
 major update to fastconfigurable shader - custom editor, perf improvements, reflections, rim lighting, alpha cutout, lightmapping support, etc.",e08d97c2f9233191b1dc793466989e16695a0f1d
+Unity_Hololens_Dev,"Deleted FastConfigurableTest.meta
+
+Unused meta file from renamed scene",c38c6ca9e277637b36dfb2b053042b8c1ad1b6ff
 HolojamSDK-Unity,"Overhauled headset tracking system
 
 TrackedHeadset rewritten entirely
@@ -4104,7 +5049,15 @@ Calculates round-trip latency on the client using a high-resolution
 timer, displays it via custom inspector
 
 Exposes Ping.Connected, Ping.LastRoundTripLatency",ef0f7768a07575aa586dc03b8efa6ed46a45fb4c
+HolojamSDK-Unity,"Updated Holojam prefab
+
+Added CorrectedLatency to Ping
+- Approximately corrects the delay in LastRoundTripLatency
+Added Ping to Holojam prefab, under client
+Ping editor updated",85e890324582b443299dce409b3becb2425051c9
+OpendagVR2,Wave Algorithm Speed Update,13c08df88c5491a68b191b45fd22585cca1cb693
 OpendagVR2,Tested buy system and enhanced performance,da0626c657c9c0d122c51780e6f6f764d3a8685e
+Supermarket-Sim,Performance improvement,a018a405c9b5c09a883bf4f288bbef540fe2224a
 Terminal,"Fixed colour counts
 
 Sped up movement speed when using WASD because I'm getting annoyed with
@@ -4142,5 +5095,6 @@ Now card prefabs are cached.",d02800da7e777ac2ffdf8d6af0544960a1b5366f
 clash-of-clones,"Aha!  HQ was shooting 3x too slow, adjusted.",b7697194c3a004c87f7f6971a1f2a928bbf717b8
 clash-of-clones,"Basic import and compile fix of VRTK 3.0.0 20f9020.
 Major performance issues.",c67113b062238b78537eea4465e11a26721a5a72
+OSVR-Unity-Palace-Demo,"Modified ""Fast"" quality setting to tur noff v-sync but keep on AA and Anisotropic textures",fd68ea19172c4c9901fc9183f91879781e870c77
 CityMatrixAR,Tweaks to the python script to output coefficients properly,26d8af54beb4f7cf7b4aa3c49680adcd1482d2a5
 CityMatrixAR,Fixed up the UDP issues and hopefully removed the eventual slowdown glitch,b5935950f2427a88628ae25a9018e4aab4d138f6

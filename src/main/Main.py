@@ -7,6 +7,7 @@ import pydriller
 import os
 
 from pydriller import Repository
+from git.exc import InvalidGitRepositoryError
 
 import clone
 from dotenv import load_dotenv
@@ -25,13 +26,13 @@ def clone_reps(result,project_dir,csv_file_path):
                 commit_message = commit.msg
                 commit_search_list = ["performance", "speed up", "accelerate", "fast", "slow", "latency", "contention", "optimize", "efficient"]
                 for search_keyword in commit_search_list:
-                    if search_keyword in commit_message:
+                    if search_keyword in commit_message.lower():
                         data = [project_name, commit_message, commit_id]
                         with open(csv_file_path,'a') as csvfile:
                             writer = csv.writer(csvfile)
                             writer.writerow(data)
-        except e:
-            print("repo is not present the project directory")
+        except Exception as e:
+            print(f"An error occurred with repository {repo_directory} because the repository deos not have the source code: {e}")
     print("data appended to the csv file {}".format(csv_file_path))
 
 
