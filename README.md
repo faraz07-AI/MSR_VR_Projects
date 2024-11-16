@@ -15,7 +15,6 @@ This repository contains tools and scripts designed for managing and analyzing V
 - [Configuration](#configuration)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
@@ -42,5 +41,59 @@ To install the dependencies, use:
 
 ```bash
 pip install -r requirements.txt
+
+## Installation
+Clone the repository:
+git clone https://github.com/faraz07-AI/MSR_VR_Projects.git
+cd MSR_VR_Projects
+Install the required Python packages as mentioned in the Requirements section.
+
+## Usage
+Cloning Repositories
+The clone.py script handles cloning of repositories listed in a text file specified by the GIT_REPO_FILES environment variable.
+
+## Analyzing Commits
+The main.py script traverses the commit history of cloned repositories and extracts relevant information based on a predefined list of keywords. The extracted data is saved in a CSV file.
+
+## To execute:
+
+python src/main/clone.py
+python src/main/main.py
+
+## Keywords for Commit Filtering
+The following keywords are used to filter commit messages:
+
+performance
+speed up
+accelerate
+fast
+slow
+latency
+contention
+optimize
+efficient
+Configuration
+Environment variables are used to configure the project. Create a .env file in the root directory and add the following variables:
+
+PROJECT_DIR=/path/to/your/project_directory/
+ROOT_DIR=/path/to/your/root_directory/
+GIT_REPO_FILES=path/to/repo_list.txt
+
+## Project Structure
+
+```bash
+MSR_VR_Projects/
+├── src/
+│   ├── main/
+│   │   ├── clone.py        # Script for cloning repositories
+│   │   ├── main.py         # Main script for traversing and analyzing commits
+│   │   └── utility.py      # Utility functions for extracting repository details
+├── .env                    # Environment variables configuration
+├── requirements.txt        # List of required Python packages
+└── README.md               # Project documentation (this file)
+
+## Contributing
+Contributions are welcome! Please fork this repository and create a pull request with your proposed changes. For major changes, please open an issue first to discuss what you would like to change.
+
 
 
