@@ -91,6 +91,7 @@ MSR_VR_Projects/
 ├── .env                    # Environment variables configuration
 ├── requirements.txt        # List of required Python packages
 └── README.md               # Project documentation (this file)
+└── VR_Project_list.txt     # Project list of VR documentation (this file)
 
 ## Contributing
 Contributions are welcome! Please fork this repository and create a pull request with your proposed changes. For major changes, please open an issue first to discuss what you would like to change.
