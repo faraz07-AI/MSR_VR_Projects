@@ -7,6 +7,9 @@ Features
 Requirements
 Installation
 Usage
+Cloning Repositories
+Analyzing Commits
+Keywords for Commit Filtering
 Configuration
 Project Structure
 Contributing
@@ -34,13 +37,11 @@ Copy code
 pip install -r requirements.txt
 Installation
 Clone the repository:
-
 bash
 Copy code
 git clone https://github.com/faraz07-AI/MSR_VR_Projects.git
 cd MSR_VR_Projects
 Install the required Python packages as mentioned in the Requirements section.
-
 Usage
 Cloning Repositories
 The clone.py script handles cloning of repositories listed in a text file specified by the GIT_REPO_FILES environment variable.
@@ -91,4 +92,3 @@ Contributions are welcome! Please fork this repository and create a pull request
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
