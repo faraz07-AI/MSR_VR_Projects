@@ -1,5 +1,5 @@
 STEP-1: configure your root directory, project_repo by creating them in the .env file.
 STEP-2: Run the clone.py script.
-STTEP-3: After running all of the clone script you will file the projects are being cloned into your enviroment under project_repo.
+STTEP-3: After running the clone script you will file the projects are being cloned into your enviroment under project_repo directory.
 STEP-4: Run the Main.py script.
-STEP-5: You will find the commits_information.csv file where you have all the details of the commit name and commit message with project name in the csv.
+STEP-5: You will find the commits_information.csv file where you have all the details of the commit name and commit message with project name in the csv according to the keyword search you provided.
